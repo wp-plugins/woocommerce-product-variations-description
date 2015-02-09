@@ -1,5 +1,5 @@
 === WooCommerce Product Variations Description ===
-Contributors: inpsyde, HerrLlama
+Contributors: inpsyde, HerrLlama, wpcodingde
 Donate Link: http://marketpress.com
 Tags: woocommerce, variations, description
 Requires at least: 4.0
