@@ -53,7 +53,7 @@ function my_theme_function_woocommerce_after_add_to_cart_form() {
     		echo $description;
     	echo '</div>';
     }
-} add_action( 'function_woocommerce_after_add_to_cart_form', 'my_theme_function_woocommerce_after_add_to_cart_form' );
+} add_action( 'woocommerce_after_add_to_cart_form', 'my_theme_function_woocommerce_after_add_to_cart_form' );
 ?>`
 
 4. Create a JavaScript or jQuery-Script to get the current selected variation (see `/woocommerce/single-product/add-to-cart/variable.php` for details) and display the variation description.
