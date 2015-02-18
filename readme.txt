@@ -4,7 +4,7 @@ Donate Link: http://marketpress.com
 Tags: woocommerce, variations, description
 Requires at least: 4.0
 Tested up to: 4.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv3
 
 This plugin provides a textarea at the variations to add detailed descriptions.
@@ -46,6 +46,10 @@ function my_theme_function_woocommerce_after_add_to_cart_form() {
 	// Get the post IDs of all the product variations
     $variation_ids = $product->children;
 
+    // check if we have variations
+    if ( empty( $variation_ids ) )
+        return;
+
 	// walk the variations
     foreach( $variation_ids as $variation_id ) {
     	$description = wcpvd_get_variation_description( $variation_id );
@@ -69,6 +73,9 @@ function my_theme_function_woocommerce_after_add_to_cart_form() {
 1. Variation with the description input box
 
 == Changelog ==
+
+= 1.0.1 =
+* Fixed problem with compatibility to WooCommerce 2.3
 
 = 1.0 =
 * Initial Release

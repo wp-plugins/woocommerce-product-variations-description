@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WooCommerce Product Variations Description
  * Description: This plugin provides a textarea at the variations to add detailed descriptions
- * Version:     1.0
+ * Version:     1.0.1
  * Author:      Inpsyde GmbH for MarketPress
  * Author URI:  http://inpsyde.com
  * Licence:     GPLv3
